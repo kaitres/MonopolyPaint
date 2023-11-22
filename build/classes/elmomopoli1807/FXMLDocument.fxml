@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.String?>
+<?import javafx.geometry.Rectangle2D?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" fx:id="inicio" prefHeight="600.0" prefWidth="800.0" stylesheets="@../css/estilo.css" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="elmomopoli1807.FXMLDocumentController">
+   <children>
+      <ImageView fitHeight="600.0" fitWidth="800.0" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <image>
+            <Image url="@../images/titulo.png" />
+         </image>
+         <viewport>
+            <Rectangle2D />
+         </viewport>
+      </ImageView>
+      <GridPane alignment="CENTER" layoutX="304.0" layoutY="257.0" prefHeight="172.0" prefWidth="193.0">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <Pane prefHeight="200.0" prefWidth="200.0">
+               <children>
+                  <Button fx:id="comenzar" alignment="CENTER" contentDisplay="TOP" mnemonicParsing="false" onAction="#comenzar" prefHeight="58.0" prefWidth="193.0" stylesheets="@../css/estilo.css" text="Comenzar" textAlignment="CENTER">
+                     <styleClass>
+                        <String fx:value="boton" />
+                        <String fx:value="nc" />
+                     </styleClass>
+                     <font>
+                        <Font name="Comic Sans MS" size="29.0" />
+                     </font></Button>
+               </children>
+            </Pane>
+            <Pane prefHeight="200.0" prefWidth="200.0" GridPane.rowIndex="2">
+               <children>
+                  <Button fx:id="salir" mnemonicParsing="false" onAction="#cerrar" prefHeight="57.0" prefWidth="193.0" styleClass="boton" stylesheets="@../css/estilo.css" text="Salir">
+                     <font>
+                        <Font name="Comic Sans MS" size="29.0" />
+                     </font></Button>
+               </children>
+            </Pane>
+         </children>
+      </GridPane>
+      <Label alignment="CENTER" contentDisplay="CENTER" layoutX="198.0" layoutY="112.0" pickOnBounds="false" prefHeight="91.0" prefWidth="405.0" stylesheets="@../css/estilo.css" text="Monopoli" textAlignment="CENTER">
+         <font>
+            <Font name="Comic Sans MS" size="65.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

@@ -1,0 +1,41 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 29-07-2018, 15:30:41
+    Author     : IP-ROUTE
+*/
+
+
+
+.label {
+
+}
+.boton{
+    -fx-background-repeat: no-repeat;
+    -fx-background-position: center;
+    
+    -fx-background-image: url(../images/buton.png);
+    
+}
+.listo{
+    -fx-background-repeat: no-repeat;
+    -fx-background-position: center;
+    
+    -fx-background-image: url(../images/butonsalir.png);
+}
+.comenzar{
+    -fx-background-repeat: no-repeat;
+    -fx-background-position: center;
+    
+    -fx-background-image: url(../images/butoncomenzar.png);
+}
+.panel{
+    -fx-background-color: white;
+    
+}
+.panel:disabled{
+    -fx-background-color: gray;
+}
